@@ -36,6 +36,7 @@ function getPairNumberFromColor(pair) {
 
 function refrenceManual() {
 	const totalPairs = MajorColorNames.length * MinorColorNames.length;
+	let manual = "";
 	for (let i = 1; i <= totalPairs; i++) {
         const pair = getColorFromPairNumber(i);
         manual += `${i.toString().padEnd(11)}| ${pair.majorColor.padEnd(12)}| ${pair.minorColor}\n`;
