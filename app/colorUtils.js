@@ -1,3 +1,5 @@
+const { ColorPair, MajorColorNames, MinorColorNames } = require("./ColorPair");
+
 function getColorFromPairNumber(pairNumber)
 {
 	let minorSize = MajorColorNames.length;
@@ -45,4 +47,17 @@ function getPairNumberFromColor(pair)
 
   return (majorIndex * MinorColorNames.length) + (minorIndex + 1);
 }
+
+function refrenceManual() {
+	const totalPairs = MajorColorNames.length * MinorColorNames.length;
+	for (let i = 1; i <= totalPairs; i++) {
+        const pair = this.getColorFromPairNumber(i);
+        manual += `${i.toString().padEnd(11)}| ${pair.majorColor.padEnd(12)}| ${pair.minorColor}\n`;
+    }
+
+    return manual;
+}
+
+module.exports = { getColorFromPairNumber, getPairNumberFromColor, refrenceManual };
+
 	 
