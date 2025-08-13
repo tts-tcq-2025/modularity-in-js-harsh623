@@ -1,3 +1,6 @@
+const assert = require("assert");
+const { getColorFromPairNumber, getPairNumberFromColor } = require("./colorUtils");
+const { ColorPair } = require("./colorPair");
 function test(){
 			let pairNumber;
             pairNumber = 4;
