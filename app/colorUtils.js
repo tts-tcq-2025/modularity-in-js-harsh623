@@ -1,4 +1,4 @@
-const { ColorPair, MajorColorNames, MinorColorNames } = require("./ColorPair");
+const { ColorPair, MajorColorNames, MinorColorNames } = require("./colorPair");
 
 function getColorFromPairNumber(pairNumber)
 {
